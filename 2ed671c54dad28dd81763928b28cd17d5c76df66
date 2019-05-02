@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "f8ff983d_eb03b7b9",
+        "filename": "SPECS/registry.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2019-05-02T14:06:04Z",
+      "side": 1,
+      "message": "AFAIK, this should be accurate, the packaged upstream components/code has these licenses.",
+      "parentUuid": "1ccf17c6_54f65fd8",
+      "range": {
+        "startLine": 24,
+        "startChar": 56,
+        "endLine": 24,
+        "endChar": 256
+      },
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "087fde1b_63a34996",
         "filename": "SPECS/registry.spec",
         "patchSetId": 1
@@ -113,6 +137,24 @@
     },
     {
       "key": {
+        "uuid": "b68e200b_370362ea",
+        "filename": "SPECS/swift.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2019-05-02T14:06:04Z",
+      "side": 1,
+      "message": "Same. (should be accurate)",
+      "parentUuid": "a98162e6_6098d6e8",
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a05453c_1e340baa",
         "filename": "ansible/roles/swift/templates/main/supervisord.pid",
         "patchSetId": 1
@@ -130,6 +172,24 @@
     },
     {
       "key": {
+        "uuid": "a8614247_baae0095",
+        "filename": "ansible/roles/swift/templates/main/supervisord.pid",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2019-05-02T14:06:04Z",
+      "side": 1,
+      "message": "Looks like it was forgotten in the templates directory and got a nice Copyrigth header. I removed it is PS2.",
+      "parentUuid": "1a05453c_1e340baa",
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0fdb9560_7e064c2b",
         "filename": "ansible/roles/swift/templates/update/supervisord.pid",
         "patchSetId": 1
@@ -141,6 +201,24 @@
       "writtenOn": "2019-05-02T13:39:31Z",
       "side": 1,
       "message": "Here too, copyrighting an integer seems a bit odd. Is ansible actually enforcing the use of PID 10? Or is this just an example?",
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "457f188c_b0ce711f",
+        "filename": "ansible/roles/swift/templates/update/supervisord.pid",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2019-05-02T14:06:04Z",
+      "side": 1,
+      "message": "It\u0027s so odd, I just completely removed it is PS2.",
+      "parentUuid": "0fdb9560_7e064c2b",
       "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": false
