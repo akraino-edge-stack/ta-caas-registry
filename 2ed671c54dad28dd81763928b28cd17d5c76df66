@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2bdaadb6_7f04d631",
+        "filename": "SPECS/registry.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 183
+      },
+      "writtenOn": "2019-05-02T13:57:36Z",
+      "side": 1,
+      "message": "second\nour code is Apache, but our legal people were kind of adamant that we need to carry forward all licence infos of all dependencies",
+      "parentUuid": "1ccf17c6_54f65fd8",
+      "range": {
+        "startLine": 24,
+        "startChar": 56,
+        "endLine": 24,
+        "endChar": 256
+      },
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "087fde1b_63a34996",
         "filename": "SPECS/registry.spec",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2019-05-02T13:39:31Z",
       "side": 1,
       "message": "Is this packaging the upstream code unmodified? If so this is fine, but if this RPM will contain a modified version then I think the URL should reflect that.",
+      "range": {
+        "startLine": 25,
+        "startChar": 16,
+        "endLine": 25,
+        "endChar": 54
+      },
+      "revId": "2ed671c54dad28dd81763928b28cd17d5c76df66",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f1107fcb_413fb5b1",
+        "filename": "SPECS/registry.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 183
+      },
+      "writtenOn": "2019-05-02T13:57:36Z",
+      "side": 1,
+      "message": "under \"Vendor\" you can see that we say it is unmodified\nthough the link is bad, nice catch :)\n\nit should point to moby repos",
+      "parentUuid": "087fde1b_63a34996",
       "range": {
         "startLine": 25,
         "startChar": 16,
