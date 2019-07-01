@@ -46,6 +46,30 @@
       "revId": "098d0e1bf65d1ccdd35e666caa8be44354db354f",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5dfbd1c2_c312cfb9",
+        "filename": "ansible/roles/swift/templates/main/proxy-server.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 186
+      },
+      "writtenOn": "2019-07-01T13:28:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "deea337b_4800dd93",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 25
+      },
+      "revId": "098d0e1bf65d1ccdd35e666caa8be44354db354f",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
