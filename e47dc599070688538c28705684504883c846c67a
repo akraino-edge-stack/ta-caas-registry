@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b43c2ac6_250a4272",
+        "filename": "ansible/roles/registry/templates/main/docker-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 183
+      },
+      "writtenOn": "2019-07-25T16:24:07Z",
+      "side": 1,
+      "message": "same, just remove",
+      "revId": "e47dc599070688538c28705684504883c846c67a",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
