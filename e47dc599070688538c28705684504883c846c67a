@@ -16,6 +16,24 @@
       "revId": "e47dc599070688538c28705684504883c846c67a",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "82f6745f_d733f0ba",
+        "filename": "ansible/roles/registry/templates/main/docker-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 186
+      },
+      "writtenOn": "2019-07-26T08:08:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b43c2ac6_250a4272",
+      "revId": "e47dc599070688538c28705684504883c846c67a",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
