@@ -17,25 +17,33 @@ MAINTAINER Balint Varga <balint.varga@nokia.com>
 
 ARG REGISTRY
 ENV REGISTRY_VERSION=$REGISTRY
+ARG go_install_dir="/usr/local/go"
+ARG go_version
 ENV GOPATH /build
-ENV PATH /usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV PATH $go_install_dir/bin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 ENV DOCKER_BUILDTAGS include_oss include_gcs
 
-WORKDIR ${GOPATH}/src/github.com/docker/distribution
 COPY common_scripts/wait-for-files /usr/bin/
 COPY mainstart.sh /
 
 RUN adduser -u 149 -D -H -s /sbin/nologin dockerreg \
 &&  chmod +x /mainstart.sh /usr/bin/wait-for-files \
 \
-&&  apk add --no-cache --virtual .build-deps build-base go godep git curl tar \
-&&  curl -fsSL -k https://github.com/docker/distribution/archive/v${REGISTRY_VERSION}.tar.gz | tar zx --strip-components=1 \
+&&  apk add --no-cache --virtual .build-deps build-base go godep git curl tar bash \
+&&  mkdir -p $go_install_dir \
+&&  curl -fsSL -k https://dl.google.com/go/go${GO_VERSION}.src.tar.gz | tar zx --strip-components=1 -C ${go_install_dir} \
+&&  cd ${go_install_dir}/src/ \
+&&  ./make.bash \
+&&  mkdir -p ${GOPATH}/src/github.com/docker/distribution \
+&&  curl -fsSL -k https://github.com/docker/distribution/archive/v${REGISTRY_VERSION}.tar.gz | tar zx --strip-components=1 -C ${GOPATH}/src/github.com/docker/distribution \
+&&  cd ${GOPATH}/src/github.com/docker/distribution \
 &&  go get -d -v \
 &&  make PREFIX=/build clean binaries \
 &&  mv ${GOPATH}/src/github.com/docker/distribution/bin/registry /usr/bin/ \
 \
 &&  apk del .build-deps \
+&&  rm -rf $go_install_dir \
 &&  rm -rf /build
 
 WORKDIR /
