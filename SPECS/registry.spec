@@ -15,8 +15,10 @@
 %define COMPONENT registry
 %define RPM_NAME caas-%{COMPONENT}
 %define RPM_MAJOR_VERSION 2.7.1
-%define RPM_MINOR_VERSION 6
+%define RPM_MINOR_VERSION 7
 %define IMAGE_TAG %{RPM_MAJOR_VERSION}-%{RPM_MINOR_VERSION}
+%define go_version 1.12.9
+
 Name:           %{RPM_NAME}
 Version:        %{RPM_MAJOR_VERSION}
 Release:        %{RPM_MINOR_VERSION}%{?dist}
@@ -50,6 +52,7 @@ docker build \
   --build-arg https_proxy="${https_proxy}" \
   --build-arg no_proxy="${no_proxy}" \
   --build-arg REGISTRY="%{version}" \
+  --build-arg go_version="%{go_version}" \
   --tag %{COMPONENT}:%{IMAGE_TAG} \
   %{_builddir}/%{RPM_NAME}-%{RPM_MAJOR_VERSION}/docker-build/%{COMPONENT}/
 
