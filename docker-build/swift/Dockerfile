@@ -156,6 +156,6 @@ python-lxml python-chardet python-requests \
 &&  yum clean all \
 &&  rm -rf /etc/yum.repos.d/luxembourg.repo \
 &&  rm -rf ${GOPATH} \
-&&  setcap 'cap_net_bind_service=+ep' /usr/bin/rsync
+&&  setcap 'cap_setgid,cap_net_bind_service,cap_setuid,cap_sys_chroot=+ep' /usr/bin/rsync
 
 ENTRYPOINT ["/usr/bin/mainstart.sh"]
