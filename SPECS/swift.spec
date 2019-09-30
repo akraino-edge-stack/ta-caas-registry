@@ -15,15 +15,20 @@
 %define COMPONENT swift
 %define RPM_NAME caas-%{COMPONENT}
 %define RPM_MAJOR_VERSION 2.22.0
-%define RPM_MINOR_VERSION 1
+%define RPM_MINOR_VERSION 2
 %define IMAGE_TAG %{RPM_MAJOR_VERSION}-%{RPM_MINOR_VERSION}
+%ifarch aarch64
+%define CENTOS_BASE centos@sha256:df89b0a0b42916b5b31b334fd52d3e396c226ad97dfe772848bdd6b00fb42bf0
+%else
+%define CENTOS_BASE centos:7.6.1810
+%endif
 Name:           %{RPM_NAME}
 Version:        %{RPM_MAJOR_VERSION}
 Release:        %{RPM_MINOR_VERSION}%{?dist}
 Summary:        Containers as a Service Swift component
 License:        %{_platform_license} and Apache License and GNU Lesser General Public License v3.0 only and BSD 3-clause New or Revised License and MIT License and Common Development and Distribution License and BSD and GNU General Public License v2.0 only
 URL:            https://github.com/openstack/swift
-BuildArch:      x86_64
+BuildArch:      %{_arch}
 Vendor:         %{_platform_vendor} and openstack/swift unmodified
 Source0:        %{name}-%{version}.tar.gz
 
@@ -50,6 +55,7 @@ docker build \
   --build-arg https_proxy="${https_proxy}" \
   --build-arg no_proxy="${no_proxy}" \
   --build-arg SWIFT="%{version}" \
+  --build-arg CENTOS_BASE="%{CENTOS_BASE}" \
   --tag %{COMPONENT}:%{IMAGE_TAG} \
   %{_builddir}/%{RPM_NAME}-%{RPM_MAJOR_VERSION}/docker-build/%{COMPONENT}/
 

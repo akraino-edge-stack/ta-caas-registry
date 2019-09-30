@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM centos:7.6.1810
+ARG CENTOS_BASE
+FROM $CENTOS_BASE
 MAINTAINER Balint Varga <balint.varga@nokia.com>
 
 ARG SWIFT

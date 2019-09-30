@@ -25,7 +25,7 @@ Release:        %{RPM_MINOR_VERSION}%{?dist}
 Summary:        Containers as a Service Registry component
 License:        %{_platform_license} and Apache License and GNU Lesser General Public License v3.0 only and BSD 3-clause New or Revised License and MIT License and Common Development and Distribution License and BSD and GNU General Public License v2.0 only
 URL:            https://github.com/docker/distribution
-BuildArch:      x86_64
+BuildArch:      %{_arch}
 Vendor:         %{_platform_vendor} and docker/distribution unmodified
 Source0:        %{name}-%{version}.tar.gz
 
