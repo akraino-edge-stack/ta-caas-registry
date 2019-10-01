@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "112c816c_df544fa6",
+        "filename": "SPECS/swift.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 183
+      },
+      "writtenOn": "2019-10-01T14:59:09Z",
+      "side": 1,
+      "message": "same comment here: if there is a common version working for all archs, let\u0027s use that one for both",
+      "revId": "373a4fcecc086163405c3298f31ae5562d5151ac",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
