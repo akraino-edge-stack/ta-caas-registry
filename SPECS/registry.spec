@@ -15,7 +15,7 @@
 %define COMPONENT registry
 %define RPM_NAME caas-%{COMPONENT}
 %define RPM_MAJOR_VERSION 2.7.1
-%define RPM_MINOR_VERSION 7
+%define RPM_MINOR_VERSION 8
 %define IMAGE_TAG %{RPM_MAJOR_VERSION}-%{RPM_MINOR_VERSION}
 %define go_version 1.12.9
 
