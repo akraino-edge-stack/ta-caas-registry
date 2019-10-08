@@ -32,7 +32,7 @@ spec:
       hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
       nodeSelector:
-        nodename: caas_master1
+        nodetype: caas_master
       securityContext:
         runAsUser: {{ caas.uid.swift }}
       containers:
