@@ -31,7 +31,7 @@ spec:
       priorityClassName: "system-cluster-critical"
       dnsPolicy: ClusterFirst
       nodeSelector:
-        nodename: caas_master1
+        nodetype: caas_master
       securityContext:
         runAsUser: {{ caas.uid.dockerreg }}
       containers:
