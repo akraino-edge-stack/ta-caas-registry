@@ -15,7 +15,7 @@
 %define COMPONENT swift
 %define RPM_NAME caas-%{COMPONENT}
 %define RPM_MAJOR_VERSION 2.22.0
-%define RPM_MINOR_VERSION 2
+%define RPM_MINOR_VERSION 3
 %define IMAGE_TAG %{RPM_MAJOR_VERSION}-%{RPM_MINOR_VERSION}
 Name:           %{RPM_NAME}
 Version:        %{RPM_MAJOR_VERSION}
@@ -23,7 +23,7 @@ Release:        %{RPM_MINOR_VERSION}%{?dist}
 Summary:        Containers as a Service Swift component
 License:        %{_platform_license} and Apache License and GNU Lesser General Public License v3.0 only and BSD 3-clause New or Revised License and MIT License and Common Development and Distribution License and BSD and GNU General Public License v2.0 only
 URL:            https://github.com/openstack/swift
-BuildArch:      x86_64
+BuildArch:  		x86_64
 Vendor:         %{_platform_vendor} and openstack/swift unmodified
 Source0:        %{name}-%{version}.tar.gz
 
