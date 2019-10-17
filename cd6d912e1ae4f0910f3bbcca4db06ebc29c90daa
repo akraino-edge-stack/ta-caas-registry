@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "868ccfe1_8562d7f5",
+        "filename": "SPECS/swift.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 183
+      },
+      "writtenOn": "2019-10-17T14:09:34Z",
+      "side": 1,
+      "message": "why?",
+      "revId": "cd6d912e1ae4f0910f3bbcca4db06ebc29c90daa",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
