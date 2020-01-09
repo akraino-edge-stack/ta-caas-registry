@@ -33,6 +33,11 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       nodeSelector:
         nodetype: caas_master
+      tolerations:
+      - key: "node-maintenancemode"
+        value: "enabled"
+        operator: "Equal"
+        effect: "NoExecute"
       securityContext:
         runAsUser: {{ caas.uid.swift }}
       containers:
